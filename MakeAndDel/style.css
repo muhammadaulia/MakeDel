@@ -1,0 +1,209 @@
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif; font-size: 0,7rem; color: black;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif; text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav list */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: lightcoral;
+    box-shadow: 0 2px 0 rgb(0, 0, 0.4);
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1rem;
+    padding: 0.75rem;
+    color: black;
+}
+
+.nav-list a:hover {
+    background: red;
+}
+
+/* Welcome section */
+.slider-container {
+    border: 5px solid black;
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+.image-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(205, 90%, 88%);
+    color: white;
+    display: grid;
+    place-items: center;
+    transition: all 0.25s ease-in-out;
+}
+
+.slide-img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.7rem;
+}
+
+.prevBtn, .nextBtn {
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin: 0 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: cadetblue;
+    transition: all 0.3s linear;
+}
+
+.prevBtn:hover, .nextBtn:hover {
+    color: royalblue;
+}
+
+/* About us section */
+.about-section {
+    text-align: center;
+    margin: 1rem;
+    padding: 4rem;
+}
+
+/* Our Product section */
+.product-section {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: lightgray;
+}
+
+.product-header {
+    max-width: 700px;
+    margin: 0 auto 1rem auto;
+    border-bottom: 0.2rem solid black;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.product {
+    background: gray;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0.5);
+}
+
+.product:hover {
+    color: wheat;
+    cursor: pointer;
+}
+
+/* Button */
+.btn-show-all {
+    font-size: 1.3rem;
+    background: gray;
+}
+
+.btn-show-all:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 6vh;
+    padding: 0.2rem;
+    background: gray;
+}
+
+.contact-media {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px black;
+    padding: 1rem;
+    color: black;
+}
+
+.contact-details:hover {
+    color: red;
+}
+
+/* Footer */
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background: lightcoral;
+    border-top: 4px solid black;
+}
+
+footer > p {
+    margin: 0.25rem;
+}
